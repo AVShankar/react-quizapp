@@ -19,6 +19,7 @@
 		"build": "react-scripts build",
 		"eject": "react-scripts eject",
 		"lint": "eslint . --max-warnings=0",
+		"lint:fix": "prettier-eslint '**/*.js' --write",
 		"format": "prettier . --write",
 		"test": "jest",
 		"coverage": "jest --coverage",
@@ -59,7 +60,6 @@
 		}
 	},
 	"lint-staged": {
-		"*.{js}": "yarn lint",
-		"*.{js,css,md,html,json}": "yarn format"
+		"*.js": "yarn lint-fix"
 	}
 }
