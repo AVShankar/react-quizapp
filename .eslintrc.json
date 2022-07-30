@@ -13,5 +13,18 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react", "jest"],
-	"rules": {}
+	"rules": {
+		// 17.0.0, importing react to a file is optional
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		"no-underscore-dangle": 0,
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "always",
+				"jsx": "always"
+			}
+		]
+	}
 }
