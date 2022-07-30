@@ -60,7 +60,12 @@
 		}
 	},
 	"lint-staged": {
-		"*.{js,jsx}": "yarn run lint:fix",
-		"*.{*.**}": "yarn run format"
+		"*.js": [
+			"yarn lint"
+		],
+		"*.{js,css,md,html,json}": [
+			"yarn format",
+			"git add"
+		]
 	}
 }
