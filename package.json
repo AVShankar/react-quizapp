@@ -60,7 +60,7 @@
 		}
 	},
 	"lint-staged": {
-		"*.js": "yarn lint-fix",
-		"*.{js,css,md,html,json}": "yarn format"
+		"*.{js,jsx}": "eslint --fix",
+		"*.{*.**}": "yarn run format"
 	}
 }
