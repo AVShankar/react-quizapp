@@ -58,12 +58,7 @@
 		}
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx,json,css,md,html}": [
-			"prettier --single-quote --write",
-			"git add"
-		],
-		"*.{js,jsx,ts,tsx,css,scss}": [
-			"yarn lint"
-		]
+		"*.js": "yarn lint",
+		"*.{js,css,md,html,json}": "yarn format"
 	}
 }
