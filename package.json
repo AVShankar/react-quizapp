@@ -62,6 +62,8 @@
 			"prettier --single-quote --write",
 			"git add"
 		],
-		"*.js": "lint"
+		"*.{js,jsx,ts,tsx}": [
+			"yarn lint"
+		]
 	}
 }
