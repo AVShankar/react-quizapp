@@ -61,6 +61,7 @@
 		"*.{js,json,css,md}": [
 			"prettier --single-quote --write",
 			"git add"
-		]
+		],
+		"*.js": "lint"
 	}
 }
